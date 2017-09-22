@@ -1,0 +1,830 @@
+<!-- Read in the name of ALLAH -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SMS - Acounting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fileinput.min.css">
+        <link rel="stylesheet" href="../css/slicknav.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.green.min.css">
+        <link rel="stylesheet" href="../Model_CSS/dashboard.css">
+        <link rel="stylesheet" href="../Model_CSS/admission.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>	
+		<script src="../js/custom.js"></script>	
+    </head>
+	
+    <body onload="startTime()">
+	
+	<div id="head_section">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navVar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">
+						<div class="banner">
+							<a href="dashboard.html"><i class="fa fa-gg"></i></a>
+							<a href="dashboard.html"><h6>ABC School</h6></a>
+						</div>	
+					</div>
+					<!-- <a class="navbar-brand" href="#">Explore SuperStar World</a> -->
+				</div><!-- .navbar-header end -->
+
+				<div class="collapse navbar-collapse" id="navVar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"> Hi, Admin </i><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting</a></li>
+								<li role="separator" class="divider"></li>							
+								<li><a href="#">Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- .navbar-collapse end -->
+		
+			</div><!-- .container-fluid end -->
+		</nav>	<!-- navbar end -->
+		
+		<div class="header_bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 header_bottom_top">
+						<div class="date_block">
+							<h4>
+								<script type="text/javascript">
+									document.write("Today is "+daY()+","+today+" "+montH());
+								</script>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-9 header_bottom_down">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="activity_block">
+									<h4><a href="acounting.html">Acounting</a>/ Manage Student Fee</h4>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="toggle_block floatleft">
+									<a href="#" id="menu_toggle"><i class="fa fa-indent"></i></a>
+								</div>
+								<div class="time_block floatright">
+									<h4 id="text"></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- row end -->
+			</div><!-- container-fluid end -->
+		</div><!-- header_bottom end -->
+		
+	</div><!-- head_section end -->
+	
+<div id="side_bar_area">	
+	<!--Side bar content-->
+	<div class="sidebar_content">
+		<ul class="sidebar_nav center">
+			<li><a href="dashboard.html">Dashboard</a></li>
+			<li><a href="#">Manage Student</a></li>
+			<li><a href="#">Manage Class</a></li>
+			<li><a href="#">Student Fee</a></li>
+			<li><a href="#">Student Attendance</a></li>
+			<li><a href="#">Manage Marks</a></li>
+			<li><a href="#">Live News</a></li>
+			<li><a href="#">Hollidays</a></li>
+		</ul> <!-- sidebar_nav end -->
+	</div><!-- sidebar_content end -->
+			
+	<!--page content-->
+	<div id="page_content">
+
+	<div class="container-fluid">
+		<div class="row">	
+			<div class="col-md-12">
+				<fieldset>
+					<legend>Manage Student Payment</legend>  
+					<div class="form-group floatleft">
+						<input type="text" autocomplete="onautocomplete"/>
+						<button type="button" class="">SEARCH</button>
+					</div>
+					<div class="pull pull-right">
+						<a href="acounting_std_fee.html"><button type="button" class="btn btn-default"> 
+							<i class="glyphicon glyphicon-plus-sign"></i> Create Student Fee
+						</button></a>
+					</div><br/><br/><br/>  
+					
+					<div class="row std_mng">
+						<div class="col-md-2">
+							<div class="std_border">
+								<div class="panel_head">Class</div>
+								<!-- Nav tabs -->
+								<ul class="std_ul nav">
+									<li><a class="active" href="#tab1" data-toggle="tab">One (I)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Two (II)</a></li>
+									<li><a href="#" data-toggle="tab">Three (III)</a></li>
+									<li><a href="#" data-toggle="tab">Four (IV)</a></li>
+									<li><a href="#" data-toggle="tab">Five (V)</a></li>
+									<li><a href="#" data-toggle="tab">Six (VI)</a></li>
+									<li><a href="#" data-toggle="tab">Seven (VII)</a></li>
+									<li><a href="#" data-toggle="tab">Eight (VIII)</a></li>
+								</ul>
+							</div><!-- std_border end -->
+						</div><!-- col-md-2 end -->
+						<div class="col-md-10">
+							<div class="std_border">
+								<div class="panel_head">Manage Student Fee</div>
+								<div class="std_tab">
+									<!-- Tab panes -->
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane fade in active" id="tab1">						
+											<!-- Nav tabs -->
+											<div class="std_nav_tab" style="padding-bottom: 10px;">
+												<ul class="nav nav-tabs" role="tablist">
+													<li role="presentation" class="active"><a href="#tabl1" aria-controls="All Section" role="tab" data-toggle="tab">All Section</a></li>
+													<li role="presentation"><a href="#tabl1" aria-controls="Section (A)" role="tab" data-toggle="tab">Section (A)</a></li>
+												</ul>
+											</div><!-- std_nav_tab end -->
+								
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade in active" id="tabl1">
+													<table id="manageStudentFee" class="table table-bordered tab_row">
+														<thead>
+															<tr>
+																<th>ID</th>
+																<th><i class="fa fa-user"></i></th>
+																<th>Student Name</th>    				
+																<th>Payment Name</th>
+																<th>Class</th>
+																<th>Section</th>
+																<th>Status</th>
+																<th>Action</th>
+															</tr><!-- tr end -->
+															<tr>
+																<td>S170001</td>
+																<td>
+																	<div class="table_pik">
+																		<img src="../img/std1.jpg" alt="table_img" />
+																	</div>
+																</td>
+																<td>Md. Abdul Ahad</td>
+																<td>Current</td>
+																<td>One (I)</td>
+																<td>A</td>
+																<td><label class="label label-success">Paid</label></td>
+																<td>
+																	<div class="btn-group">
+																		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																		Action <span class="caret"></span>
+																		</button>
+																		<ul class="dropdown-menu">
+																			<li><a data-toggle="modal" href="#popUpPrintStudentFee"><i class="fa fa-book"></i> View</a></li>
+																			<li><a data-toggle="modal" href="#popUpEditStudentFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																			<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																		</ul>
+																	</div>
+																</td>
+															</tr><!-- tr end -->										
+														</thead><!-- thead -->
+													</table><!-- table end -->
+												</div><!-- tabpanel end -->
+											</div><!-- tab-content end -->
+										</div><!-- X tabpanel end -->
+										
+										<div role="tabpanel" class="tab-pane fade in" id="tab2">						
+											<!-- Nav tabs -->
+											<div class="std_nav_tab" style="padding-bottom: 10px;">
+												<ul class="nav nav-tabs" role="tablist">
+													<li role="presentation" class="active"><a href="#tabl2" aria-controls="All Section" role="tab" data-toggle="tab">All Section</a></li>
+													<li role="presentation"><a href="#tabl2" aria-controls="Section (A)" role="tab" data-toggle="tab">Section (A)</a></li>
+													<li role="presentation"><a href="#tabl2" aria-controls="" role="tab" data-toggle="tab">Section (B)</a></li>
+												</ul>
+											</div><!-- std_nav_tab end -->
+								
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div role="tabpanel" class="tab-pane fade in active" id="tabl2">
+													<table id="manageStudentFee" class="table table-bordered tab_row">
+														<thead>
+															<tr>
+																<th>ID</th>
+																<th><i class="fa fa-user"></i></th>
+																<th>Student Name</th>    				
+																<th>Payment Name</th>
+																<th>Class</th>
+																<th>Section</th>
+																<th>Status</th>
+																<th>Action</th>
+															</tr><!-- tr end -->
+															<tr>
+																<td>S170001</td>
+																<td>
+																	<div class="table_pik">
+																		<img src="../img/std1.jpg" alt="table_img" />
+																	</div>
+																</td>
+																<td>Md. Abdul Ahad</td>
+																<td>Current</td>
+																<td>One (I)</td>
+																<td>A</td>
+																<td><label class="label label-info">Due</label></td>
+																<td>
+																	<div class="btn-group">
+																		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																		Action <span class="caret"></span>
+																		</button>
+																		<ul class="dropdown-menu">
+																			<li><a data-toggle="modal" href="#popUpPrintStudentFee"><i class="fa fa-book"></i> View</a></li>
+																			<li><a data-toggle="modal" href="#popUpEditStudentFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																			<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																		</ul>
+																	</div>
+																</td>
+															</tr><!-- tr end -->															<tr>
+																<td>S170001</td>
+																<td>
+																	<div class="table_pik">
+																		<img src="../img/std1.jpg" alt="table_img" />
+																	</div>
+																</td>
+																<td>Md. Abdul Ahad</td>
+																<td>Current</td>
+																<td>One (I)</td>
+																<td>A</td>
+																<td><label class="label label-danger">Unpaid</label></td>
+																<td>
+																	<div class="btn-group">
+																		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																		Action <span class="caret"></span>
+																		</button>
+																		<ul class="dropdown-menu">
+																			<li><a data-toggle="modal" href="#popUpPrintStudentFee"><i class="fa fa-book"></i> View</a></li>
+																			<li><a data-toggle="modal" href="#popUpEditStudentFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																			<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																		</ul>
+																	</div>
+																</td>
+															</tr><!-- tr end -->										
+														</thead><!-- thead -->
+													</table><!-- table end -->	
+												</div><!-- tabpanel end -->
+												
+											</div><!-- tab-content end -->
+										</div><!-- XX tabpanel end -->
+										
+									</div><!-- tab-content end -->	
+								</div><!-- std_tab end -->
+							</div><!-- std_border end -->	
+						</div><!-- col-md-10 end -->
+					</div><!-- row end -->	
+				</fieldset><!-- fieldset end -->	
+			</div><!-- col-md-12 end -->						
+		</div><!-- row end -->
+	</div><!-- container-fluid end -->
+	
+	
+	</div><!-- page_content end -->			
+</div><!-- side_bar_area end -->
+
+
+
+														<!-- Pop Up Area -->
+
+	
+	
+	
+	<!-- popUpPrintStudentFee -->							
+	<div class="modal fade" id="popUpPrintStudentFee">
+		<div class="modal-dialog" style="width: 960px; margin: 0 auto; height: auto;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="print_head">
+						<i class="fa fa-gg floatleft"></i>
+						<h6 class="floatleft">ABC School</h6>
+					</div>
+				</div>
+				
+				<div class="modal-body">
+					<div class="">
+						<div class="row">
+							<div class="col-md-3 print_side_col">
+								<div class="print_image">
+									<img src="../img/std1.jpg" alt="Teacher Image" />
+								</div>
+								<div class="print_head_name center">
+									<p>Arnab Ahmed</p>
+								</div>
+							</div><!-- col-md-3 end -->
+							<div class="col-md-9">
+								<table class="table table-bordered">
+									<thead>
+											<tr>   				
+												<th>User ID</th>
+												<th>S170001</th>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Name</td>
+												<td>Arnab Ahmed</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Father's Name</td>
+												<td>Md. Abdur Rahman</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Mother's Name</td>
+												<td>Mst. Salma Aktar</td>
+											</tr><!-- tr end -->				
+											<tr>
+												<td>Date of Birth</td>
+												<td>1995-07-25 [year-month-day]</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Contact Number</td>
+												<td>+8801712896982</td>
+											</tr><!-- tr end -->										
+										</thead><!-- thead -->
+								</table><!-- tr end -->	
+							</div><!-- col-md-9 end -->
+						</div><!-- row end -->
+					</div><!-- body1 end -->
+					
+					<div class="admission_info">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="print_payment">
+									<div class="panel_head">
+										Admission Payment, <strong id="">2017</strong>
+										<button class="toggle_admission_btn">Paid</button>
+									</div>
+									<div id="toggle_admission_info" class="row">
+										<div class="col-md-4">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th>User ID</th>
+														<th>T170001</th>
+													</tr><!-- tr end -->
+													<tr>
+														<td>Building Fee</td>
+														<td>700/=</td>
+													</tr><!-- tr end -->
+													<tr>
+														<td>Others Fee</td>
+														<td>300/=</td>
+													</tr><!-- tr end -->						
+												</thead><!-- thead -->
+											</table><!-- </table> -->
+										</div><!-- col-md-4 end -->			
+										<div class="col-md-4">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th>Class Name</th>
+														<th>Eight (VII)</th>
+													</tr><!-- tr end -->
+													<tr>
+														<td>Magazine Fee</td>
+														<td>100/=</td>
+													</tr><!-- tr end -->
+													<tr>
+														<td>Sports Fee</td>
+														<td>200/=</td>
+													</tr><!-- tr end -->						
+												</thead><!-- thead -->
+											</table><!-- </table> -->
+										</div><!-- col-md-4 end -->								
+										<div class="col-md-4">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th>Section Name</th>
+														<th>A</th>
+													</tr><!-- tr end -->
+													<tr>
+														<td>Electric Fee</td>
+														<td>100/=</td>
+													</tr><!-- tr end -->
+													<tr>
+														<td>Development Fee</td>
+														<td>1200/=</td>
+													</tr><!-- tr end -->						
+												</thead><!-- thead -->
+											</table><!-- </table> -->
+										</div><!-- col-md-4 end -->
+										<div class="col-md-12 center" style="margin-bottom: 25px;">
+											<strong>Total Amount = <i id="">2500Tk.  </i> (Paid)</strong>
+										</div>
+									</div><!-- toggle_admission_info / row end -->
+									
+								</div><!-- print_payment end -->									
+							</div><!-- col-md-12 end -->
+						</div><!-- row end -->
+					</div><!-- admission_info end -->
+					
+					<div class="current_print_payment">
+						<div class="row">
+							<div class="col-md-12">
+								<table class="table table-bordered print_payment">
+									<div class="panel_head">Current Payment, <strong id="">2017</strong></div>
+									<thead>
+										<tr>
+											<th>January</th>
+											<th>February</th>
+											<th>March</th>
+											<th>April</th>
+											<th>May</th>
+											<th>June</th>
+											<th>July</th>
+											<th>Agust</th>
+											<th>September</th>
+											<th>October</th>
+											<th>November</th>
+											<th>December</th>
+										</tr><!-- tr end -->	
+										<tr>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+											<td><label class="label label-success">Paid</label></td>
+										</tr><!-- tr end -->
+										<tr>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+											<td>01-05-17</td>
+										</tr><!-- tr end -->							
+									</thead><!-- thead -->
+								</table><!-- table end -->									
+							</div><!-- col-md-12 end -->
+						</div><!-- row end -->
+					</div><!-- body2 end -->
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" onclick="window.print()">PRINT</button>
+					<button class="btn btn-default" data-dismiss="modal">Exit</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpPrintStudentFee end -->	
+															
+														
+														
+														
+	<!-- popUpEditStudentFee -->							
+	<div class="modal fade" id="popUpEditStudentFee">
+		<div class="modal-dialog" style="width: 960px; margin: 0 auto; height: auto;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Student Info</h3>
+				</div>
+				
+				<div class="modal-body">
+					<div class="">
+						<div class="row">
+							<div class="col-md-3 print_side_col">
+								<div class="print_image">
+									<img src="../img/std1.jpg" alt="Teacher Image" />
+								</div>
+								<div class="print_head_name center">
+									<p>Arnab Ahmed</p>
+								</div>
+							</div><!-- col-md-3 end -->
+							<div class="col-md-9">
+								<table class="table table-bordered">
+									<thead>
+											<tr>   				
+												<th>User ID</th>
+												<th>S170001</th>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Name</td>
+												<td>Arnab Ahmed</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Father's Name</td>
+												<td>Md. Abdur Rahman</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Mother's Name</td>
+												<td>Mst. Salma Aktar</td>
+											</tr><!-- tr end -->				
+											<tr>
+												<td>Date of Birth</td>
+												<td>1995-07-25 [year-month-day]</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Contact Number</td>
+												<td>+8801712896982</td>
+											</tr><!-- tr end -->										
+										</thead><!-- thead -->
+								</table><!-- tr end -->	
+							</div><!-- col-md-9 end -->
+						</div><!-- row end -->
+					</div><!-- ... end -->
+					
+					
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#current_fee" data-toggle="tab">Current Fee</a></li>
+						<li><a href="#exam_fee" data-toggle="tab">Exam Fee</a></li>
+						<li><a href="#admission_fee" data-toggle="tab">Admission Fee</a></li>
+					</ul>
+						
+					<!-- Tab panes -->
+					<div class="tab-content" style="padding-top: 15px;">
+					
+						<!-- current_fee -->
+						<div role="tabpanel" class="tab-pane fade in active" id="current_fee">
+							<div class="row">
+								<div class="col-md-12">
+									<table class="table table-bordered tab_row_m2">
+										<thead>
+											<tr>
+												<th>Month</th>
+												<th>Status</th>
+												<th>Post Date</th>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">January</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">February</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">March</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">April</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">May</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">June</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">July</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">Agust</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">September</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">October</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">November</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">December</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->								
+										</thead><!-- thead -->
+									</table><!-- table end -->									
+								</div><!-- col-md-12 end -->
+							</div><!-- row end -->
+						</div><!-- tabpanel end -->
+						<!-- current_fee  end-->
+						
+						<!-- exam_fee -->
+						<div role="tabpanel" class="tab-pane fade" id="exam_fee">
+							<div class="row">
+								<div class="col-md-12">
+									<table class="table table-bordered tab_row_m2">
+										<thead>
+											<tr>
+												<th>Exam Type</th>
+												<th>Status</th>
+												<th>Post Date</th>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">First Term</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">Second Term</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->	
+											<tr>
+												<td class="month_td">Final Term</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->							
+										</thead><!-- thead -->
+									</table><!-- table end -->									
+								</div><!-- col-md-12 end -->
+							</div><!-- row end -->
+						</div><!-- tabpanel end -->
+						<!-- exam_fee end -->			
+
+						<!-- admission_fee -->
+						<div role="tabpanel" class="tab-pane fade" id="admission_fee">
+							<div class="row">
+								<div class="col-md-12">
+									<table class="table table-bordered tab_row_m2">
+										<thead>	
+											<tr>
+												<td class="month_td">Admission Fee</td>
+												<td>
+													<select name="" id="" class="form-control">
+														<option value=""><label class="label label-success">Paid</label></option>
+														<option value=""><label class="label label-info">Unpaid</label></option>
+													</select>
+												</td>
+												<td><input type="text" value="01-01-2017" class="form-control" /></td>
+											</tr><!-- tr end -->						
+										</thead><!-- thead -->
+									</table><!-- table end -->									
+								</div><!-- col-md-12 end -->
+							</div><!-- row end -->
+						</div><!-- tabpanel end -->
+						<!-- admission_fee end -->
+						
+					</div><!-- Tab content end -->
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpEditStudentFee end -->	
+												
+			
+	<!-- popUpRemove -->							
+	<div class="modal fade" id="popUpRemove">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Student Info</h3>
+				</div>
+				
+				<div class="modal-body">
+					<h3>Do you really want to remove this student?</h3>
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpRemove end -->	
+												
+	
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>		
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/fileinput.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script src="../js/jquery.fitvids.js"></script>		
+		<script src="../js/main.js"></script>	
+
+    </body>
+</html>
+<!--  -->

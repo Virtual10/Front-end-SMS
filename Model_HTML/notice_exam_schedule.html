@@ -1,0 +1,359 @@
+<!-- Read in the name of ALLAH -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SMS - Notice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fileinput.min.css">
+        <link rel="stylesheet" href="../css/slicknav.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.green.min.css">
+        <link rel="stylesheet" href="../Model_CSS/dashboard.css">
+        <link rel="stylesheet" href="../Model_CSS/admission.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>	
+		<script src="../js/custom.js"></script>	
+    </head>
+	
+    <body onload="startTime()">
+	
+	<div id="head_section">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navVar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">
+						<div class="banner">
+							<a href="dashboard.html"><i class="fa fa-gg"></i></a>
+							<a href="dashboard.html"><h6>ABC School</h6></a>
+						</div>	
+					</div>
+					<!-- <a class="navbar-brand" href="#">Explore SuperStar World</a> -->
+				</div><!-- .navbar-header end -->
+
+				<div class="collapse navbar-collapse" id="navVar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"> Hi, Admin </i><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting</a></li>
+								<li role="separator" class="divider"></li>							
+								<li><a href="#">Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- .navbar-collapse end -->
+		
+			</div><!-- .container-fluid end -->
+		</nav>	<!-- navbar end -->
+		
+		<div class="header_bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 header_bottom_top">
+						<div class="date_block">
+							<h4>
+								<script type="text/javascript">
+									document.write("Today is "+daY()+","+today+" "+montH());
+								</script>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-9 header_bottom_down">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="activity_block">
+									<h4><a href="notice.html">Notice</a>/ Exam Schedule</h4>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="toggle_block floatleft">
+									<a href="#" id="menu_toggle"><i class="fa fa-indent"></i></a>
+								</div>
+								<div class="time_block floatright">
+									<h4 id="text"></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- row end -->
+			</div><!-- container-fluid end -->
+		</div><!-- header_bottom end -->
+		
+	</div><!-- head_section end -->
+	
+<div id="side_bar_area">	
+	<!--Side bar content-->
+	<div class="sidebar_content">
+		<ul class="sidebar_nav center">
+			<li><a href="dashboard.html">Dashboard</a></li>
+			<li><a href="#">Manage Student</a></li>
+			<li><a href="#">Manage Class</a></li>
+			<li><a href="#">Student Fee</a></li>
+			<li><a href="#">Student Attendance</a></li>
+			<li><a href="#">Manage Marks</a></li>
+			<li><a href="#">Live News</a></li>
+			<li><a href="#">Hollidays</a></li>
+		</ul> <!-- sidebar_nav end -->
+	</div><!-- sidebar_content end -->
+			
+	<!--page content-->
+	<div id="page_content">
+
+	<div class="container-fluid">
+		<div class="row">	
+			<div class="col-md-12">
+				<fieldset>
+					<legend>Exam Schedule</legend>  
+					<div class="form-group floatleft">
+						<input type="text" autocomplete="onautocomplete"/>
+						<button type="button" class="">SEARCH</button>
+					</div>
+					<div class="pull pull-right">
+						<a data-toggle="modal" data-target="#popUpAddExam"><button type="button" class="btn btn-default"> 
+							<i class="glyphicon glyphicon-plus-sign"></i> Add Exam 
+						</button></a>
+					</div><br/><br/><br/>  
+					
+					<div class="row std_mng">
+						<div class="col-md-4">
+							<div class="std_border">
+								<div class="panel_head">Class</div>
+								<!-- Nav tabs -->
+								<ul class="std_ul nav">
+									<li><a  class="active" href="#tab1" data-toggle="tab1">One (I)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Two (II)</a></li>
+									<li><a href="#tab1" data-toggle="tab">Three (III)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Four (IV)</a></li>
+									<li><a href="#tab1" data-toggle="tab">Five (V)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Six (VI)</a></li>
+									<li><a href="#tab1" data-toggle="tab">Seven (VII)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Eight (VIII)</a></li>
+								</ul>
+							</div><!-- std_border end -->
+						</div><!-- col-md-2 end -->
+					
+						<div class="col-md-8">
+							<div class="std_border">
+								<div class="panel_head">Exam Schedule</div>
+									<div class="std_tab">
+										<!-- Tab panes -->
+										<div class="tab-content">
+										
+											<div role="tabpanel" class="tab-pane fade in active" id="tab1">						
+												<table id="noticeExamSchedule" class="table table-bordered tab_row_m9">
+													<thead>
+														<tr>
+															<th>Exam Name</th>
+															<th>Date</th>
+															<th>Action</th>
+														</tr><!-- tr end -->
+														<tr>
+															<td>First Term</td>
+															<td>02/05/17</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditExam"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->										
+													</thead><!-- thead -->
+												</table><!-- noticeExamSchedule table end -->
+											</div><!-- X tabpanel end -->
+											
+											<div role="tabpanel" class="tab-pane fade" id="tab2">						
+												<table id="noticeExamSchedule" class="table table-bordered tab_row_m9">
+													<thead>
+														<tr>
+															<th>Exam Name</th>
+															<th>Date</th>
+															<th>Action</th>
+														</tr><!-- tr end -->
+														<tr>
+															<td>First Term</td>
+															<td>02/05/17</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditExam"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														<tr>
+															<td>First Term</td>
+															<td>02/05/17</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditExam"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->										
+													</thead><!-- thead -->
+												</table><!-- noticeExamSchedule table end -->
+											</div><!-- XX tabpanel end -->
+											
+										</div><!-- tab-content end -->
+									</div><!-- std_tab end -->
+							</div><!-- std_border end -->	
+						</div><!-- col-md-10 end -->
+					</div><!-- row end -->	
+				</fieldset><!-- fieldset end -->	
+			</div><!-- col-md-12 end -->						
+		</div><!-- row end -->
+	</div><!-- container-fluid end -->
+	
+	
+	</div><!-- page_content end -->			
+</div><!-- side_bar_area end -->
+
+
+
+														<!-- Pop Up Area -->
+
+				
+														
+														
+	<!-- popUpAddExam -->	
+	
+	<div class="modal fade" id="popUpAddExam">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Add Exam</h3>
+				</div>
+				
+				<div class="modal-body">	
+					<fieldset>
+						<div class="form-group">
+							<label for="sID">Exam Name<a href="#" class=""></a></label>
+								<input type="text" class="form-control" id="section_name" name="section_name" placeholder="Final Term" autocomplete="onautocomplete" required>
+						</div>	
+						<div class="form-group">
+							<label for="fname">Date</label>
+								<input type="text" class="form-control" id="section_name" name="section_name" placeholder="02/5/15" autocomplete="onautocomplete" required>	
+						</div>
+					</fieldset><!-- fieldset end -->					
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpAddExam end -->	
+												
+	
+
+	<!-- popUpEditExam -->	
+	
+	<div class="modal fade" id="popUpEditExam">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Edit Exam</h3>
+				</div>
+				
+				<div class="modal-body">	
+					<fieldset>
+						<div class="form-group">
+							<label for="fname">Exam Name</label>
+							<select name="" id="" class="form-control">
+								<option value="">First Term</option>
+								<option value="">Second Term</option>
+								<option value="">Final Term</option>
+							</select>	
+						</div>					
+						<div class="form-group">
+							<label for="sID">Date<a href="#" class=""></a></label>
+								<input type="text" class="form-control" id="section_name" name="section_name" placeholder="xx/xx/xxxx" autocomplete="onautocomplete" required>
+						</div>	
+
+					</fieldset><!-- fieldset end -->					
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpEditExam end -->	
+
+
+
+	
+	<!-- popUpRemove -->							
+	<div class="modal fade" id="popUpRemove">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Section info</h3>
+				</div>
+				
+				<div class="modal-body">
+					<h3>Do you really want to remove this section?</h3>
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpRemove end -->
+
+	
+												
+	
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>		
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/fileinput.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script src="../js/jquery.fitvids.js"></script>		
+		<script src="../js/main.js"></script>	
+
+    </body>
+</html>
+<!--  -->

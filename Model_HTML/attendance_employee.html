@@ -1,0 +1,250 @@
+<!-- Read in the name of ALLAH -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SMS - Attendance</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fileinput.min.css">
+        <link rel="stylesheet" href="../css/slicknav.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.green.min.css">
+        <link rel="stylesheet" href="../Model_CSS/dashboard.css">
+        <link rel="stylesheet" href="../Model_CSS/admission.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>	
+		<script src="../js/custom.js"></script>	
+    </head>
+	
+    <body onload="startTime()">
+	
+	<div id="head_section">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navVar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">
+						<div class="banner">
+							<a href="dashboard.html"><i class="fa fa-gg"></i></a>
+							<a href="dashboard.html"><h6>ABC School</h6></a>
+						</div>	
+					</div>
+					<!-- <a class="navbar-brand" href="#">Explore SuperStar World</a> -->
+				</div><!-- .navbar-header end -->
+
+				<div class="collapse navbar-collapse" id="navVar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"> Hi, Admin </i><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting</a></li>
+								<li role="separator" class="divider"></li>							
+								<li><a href="#">Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- .navbar-collapse end -->
+		
+			</div><!-- .container-fluid end -->
+		</nav>	<!-- navbar end -->
+		
+		<div class="header_bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 header_bottom_top">
+						<div class="date_block">
+							<h4>
+								<script type="text/javascript">
+									document.write("Today is "+daY()+","+today+" "+montH());
+								</script>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-9 header_bottom_down">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="activity_block">
+									<h4><a href="attendance.html">Attendance</a>/ Employee Attendance</h4>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="toggle_block floatleft">
+									<a href="#" id="menu_toggle"><i class="fa fa-indent"></i></a>
+								</div>
+								<div class="time_block floatright">
+									<h4 id="text"></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- row end -->
+			</div><!-- container-fluid end -->
+		</div><!-- header_bottom end -->
+		
+	</div><!-- head_section end -->
+	
+<div id="side_bar_area">	
+	<!--Side bar content-->
+	<div class="sidebar_content">
+		<ul class="sidebar_nav center">
+			<li><a href="dashboard.html">Dashboard</a></li>
+			<li><a href="#">Manage Student</a></li>
+			<li><a href="#">Manage Class</a></li>
+			<li><a href="#">Student Fee</a></li>
+			<li><a href="#">Student Attendance</a></li>
+			<li><a href="#">Manage Marks</a></li>
+			<li><a href="#">Live News</a></li>
+			<li><a href="#">Hollidays</a></li>
+		</ul> <!-- sidebar_nav end -->
+	</div><!-- sidebar_content end -->
+			
+	<!--page content-->
+	<div id="page_content">
+
+	<div class="container-fluid">
+		<div class="row">	
+			<div class="col-md-12">
+				<fieldset>
+					<legend>Take Employee Attendance</legend>  
+					<div class="form-group floatleft">
+						<input type="text" autocomplete="onautocomplete"/>
+						<button type="button" class="">SEARCH</button>
+					</div>
+					<div class="pull pull-right">
+						<a href="attendance_manage.html"><button type="button" class="btn btn-default"> 
+							<i class="glyphicon glyphicon-plus-sign"></i> Manage Employee Attendance
+						</button></a>
+					</div><br/><br/><br/>  
+					<div class="row top_attendance">
+						<div class="col-md-6 col-md-offset-3">
+							<div class="panel_head">Take Employee Attendance</div>
+							<div class="attendance_head">
+								<form class="form-horizontal" method="post" id="getAttendanceForm">		
+									<div class="form-group">
+										<label for="type" class="col-sm-3 control-label">Select Dete</label>
+										<div class="col-sm-9">
+											<input type="text" value="01-01-2017" class="form-control"/>
+											<button type="button" class="btn btn-primary btn-lg btn-block attn_btn">Submit</button>
+										</div>
+									</div>
+								</form><!-- form-horizontal end -->
+							</div><!-- attendance_head end -->
+						</div><!-- col-md-6 col-md-offset-3 end -->
+					</div><!-- row end -->
+					<div class="row toggle_submit_btn">
+						<div class="col-md-12">
+							<div class="std_border">
+								<div class="panel_head">Take Employee Attendance</div>
+								<table id="" class="table table-bordered tab_row_m2">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Employee ID</th>
+											<th>Employee Name</th>
+											<th>Status</th>
+										</tr><!-- tr end -->
+										<tr>
+											<td>1</td>
+											<td class="true_attend">E170001</td>
+											<td>Md. Abdul Ahad</td>
+											<td>
+												<div class="attendance_switch center">
+													<div class="present_yes bg-primary floatleft">
+														YES
+													</div>
+													<div class="present_no floatleft">
+														NO
+													</div>
+												</div>
+											</td>
+										<tr>
+											<td>2</td>
+											<td class="true_attend">E170001</td>
+											<td>Md. Abdul Ahad</td>
+											<td>
+												<div class="attendance_switch center">
+													<div class="present_yes bg-primary floatleft">
+														YES
+													</div>
+													<div class="present_no floatleft">
+														NO
+													</div>
+												</div>
+											</td>
+										<tr>
+											<td>3</td>
+											<td class="true_attend">E170001</td>
+											<td>Md. Abdul Ahad</td>
+											<td>
+												<div class="attendance_switch center">
+													<div class="present_yes bg-primary floatleft">
+														YES
+													</div>
+													<div class="present_no floatleft">
+														NO
+													</div>
+												</div>
+											</td>
+										<tr>
+											<td>4</td>
+											<td class="true_attend">E170001</td>
+											<td>Md. Abdul Ahad</td>
+											<td>
+												<div class="attendance_switch center">
+													<div class="present_yes bg-primary floatleft">
+														YES
+													</div>
+													<div class="present_no floatleft">
+														NO
+													</div>
+												</div>
+											</td>
+										</tr><!-- tr end -->				
+									</thead><!-- thead -->
+								</table><!-- table end -->
+								<div class=" center">
+									<button class="btn btn-primary" data-dismiss="modal">Submit</button>
+									<button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+								</div>
+							</div><!-- std_border end -->
+						</div><!-- col-md-12 end -->
+					</div><!-- row end -->	
+				</fieldset><!-- fieldset end -->	
+			</div><!-- col-md-12 end -->						
+		</div><!-- row end -->
+	</div><!-- container-fluid end -->
+	
+	</div><!-- page_content end -->			
+</div><!-- side_bar_area end -->
+
+
+
+														<!-- Pop Up Area -->								
+	
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>		
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/fileinput.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script src="../js/jquery.fitvids.js"></script>		
+		<script src="../js/main.js"></script>	
+
+    </body>
+</html>
+<!--  -->

@@ -1,0 +1,596 @@
+<!-- Read in the name of ALLAH -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SMS - Acounting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fileinput.min.css">
+        <link rel="stylesheet" href="../css/slicknav.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.green.min.css">
+        <link rel="stylesheet" href="../Model_CSS/dashboard.css">
+        <link rel="stylesheet" href="../Model_CSS/admission.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>	
+		<script src="../js/custom.js"></script>	
+    </head>
+	
+    <body onload="startTime()">
+	
+	<div id="head_section">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navVar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">
+						<div class="banner">
+							<a href="dashboard.html"><i class="fa fa-gg"></i></a>
+							<a href="dashboard.html"><h6>ABC School</h6></a>
+						</div>	
+					</div>
+					<!-- <a class="navbar-brand" href="#">Explore SuperStar World</a> -->
+				</div><!-- .navbar-header end -->
+
+				<div class="collapse navbar-collapse" id="navVar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"> Hi, Admin </i><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting</a></li>
+								<li role="separator" class="divider"></li>							
+								<li><a href="#">Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- .navbar-collapse end -->
+		
+			</div><!-- .container-fluid end -->
+		</nav>	<!-- navbar end -->
+		
+		<div class="header_bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 header_bottom_top">
+						<div class="date_block">
+							<h4>
+								<script type="text/javascript">
+									document.write("Today is "+daY()+","+today+" "+montH());
+								</script>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-9 header_bottom_down">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="activity_block">
+									<h4><a href="acounting.html">Accounting</a>/Fee Structure Setup</h4>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="toggle_block floatleft">
+									<a href="#" id="menu_toggle"><i class="fa fa-indent"></i></a>
+								</div>
+								<div class="time_block floatright">
+									<h4 id="text"></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- row end -->
+			</div><!-- container-fluid end -->
+		</div><!-- header_bottom end -->
+		
+	</div><!-- head_section end -->
+	
+<div id="side_bar_area">	
+	<!--Side bar content-->
+	<div class="sidebar_content">
+		<ul class="sidebar_nav center">
+			<li><a href="dashboard.html">Dashboard</a></li>
+			<li><a href="#">Manage Student</a></li>
+			<li><a href="#">Manage Class</a></li>
+			<li><a href="#">Student Fee</a></li>
+			<li><a href="#">Student Attendance</a></li>
+			<li><a href="#">Manage Marks</a></li>
+			<li><a href="#">Live News</a></li>
+			<li><a href="#">Hollidays</a></li>
+		</ul> <!-- sidebar_nav end -->
+	</div><!-- sidebar_content end -->
+			
+	<!--page content-->
+	<div id="page_content">
+
+	<div class="container-fluid">
+		<div class="row">	
+			<div class="col-md-12">
+				<fieldset>
+					<legend>Manage Fee Structure Setup</legend>  
+					<div class="form-group floatleft">
+						<input type="text"/>
+						<button type="button" class="">SEARCH</button>
+					</div>
+					<div class="pull pull-right">
+						<a data-toggle="modal" data-target="#popUpAddFee"><button type="button" class="btn btn-default"> 
+							<i class="glyphicon glyphicon-plus-sign"></i> Add Fee 
+						</button></a>
+					</div><br/><br/><br/>  
+					
+					<div class="row std_mng">
+						<div class="col-md-4">
+							<div class="std_border">
+								<div class="panel_head">Class</div>
+								<!-- Nav tabs -->
+								<ul class="std_ul nav">
+									<li><a  class="active" href="#tab1" data-toggle="tab1">One (I)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Two (II)</a></li>
+									<li><a href="#tab1" data-toggle="tab">Three (III)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Four (IV)</a></li>
+									<li><a href="#tab1" data-toggle="tab">Five (V)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Six (VI)</a></li>
+									<li><a href="#tab1" data-toggle="tab">Seven (VII)</a></li>
+									<li><a href="#tab2" data-toggle="tab">Eight (VIII)</a></li>
+								</ul>
+							</div><!-- std_border end -->
+						</div><!-- col-md-2 end -->
+					
+						<div class="col-md-8">
+							<div class="std_border">
+								<div class="panel_head">Manage Fee </div>
+									<div class="std_tab">
+										<!-- Tab panes -->
+										<div class="tab-content">
+										
+											<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+												<div class="form-group">
+													<form action="">
+														<fieldset><legend>Class One (I)</legend></fieldset>
+													</form>
+												</div>
+												<table id="feeStructureSetup" class="table table-bordered tab_row tab_row_m1">
+													<thead>
+														<tr>
+															<th>Object</th>
+															<th>Amount</th>
+															<th>Action</th>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Monthly Fee</td>
+															<td>100</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->														
+														<tr>
+															<td>Building Fee</td>
+															<td>700</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														<tr>
+															<td>Magazine Fee</td>
+															<td>20</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Electric Fee</td>
+															<td>15</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														<tr>
+															<td>Development Fee</td>
+															<td>300</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Exam Fee</td>
+															<td>700</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														<tr>
+															<td>Sports Fee</td>
+															<td>100</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Others Fee</td>
+															<td>150</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														
+													</thead><!-- thead -->
+												</table><!-- manageFeeTable table end -->
+											</div><!-- X tabpanel end -->
+											
+											<div role="tabpanel" class="tab-pane fade in" id="tab2">						
+												<div class="form-group">
+													<form action="">
+														<fieldset><legend>Class Two (II)</legend></fieldset>
+													</form>
+												</div>
+												<table id="feeStructureSetup" class="table table-bordered tab_row tab_row_m1">
+													<thead>
+														<tr>
+															<th>Object</th>
+															<th>Amount</th>
+															<th>Action</th>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Monthly Fee</td>
+															<td>200</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->														
+														<tr>
+															<td>Building Fee</td>
+															<td>900</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														<tr>
+															<td>Magazine Fee</td>
+															<td>50</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Electric Fee</td>
+															<td>25</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														<tr>
+															<td>Development Fee</td>
+															<td>300</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Exam Fee</td>
+															<td>700</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														<tr>
+															<td>Sports Fee</td>
+															<td>100</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->
+														<tr>
+															<td>Others Fee</td>
+															<td>150</td>
+															<td>
+																<div class="btn-group">
+																	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+																	Action <span class="caret"></span>
+																	</button>
+																	<ul class="dropdown-menu">
+																		<li><a data-toggle="modal" href="#popUpEditFee"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>			    
+																		<li><a data-toggle="modal" href="#popUpRemove"><i class="fa fa-ban"></i> Remove</a></li>		    
+																	</ul>
+																</div>
+															</td>
+														</tr><!-- tr end -->	
+														
+													</thead><!-- thead -->
+												</table><!-- manageFeeTable table end -->												
+											</div><!-- XX tabpanel end -->
+											
+										</div><!-- tab-content end -->
+									</div><!-- std_tab end -->
+							</div><!-- std_border end -->	
+						</div><!-- col-md-10 end -->
+					</div><!-- row end -->	
+				</fieldset><!-- fieldset end -->	
+			</div><!-- col-md-12 end -->						
+		</div><!-- row end -->
+	</div><!-- container-fluid end -->
+	
+	
+	</div><!-- page_content end -->			
+</div><!-- side_bar_area end -->
+
+
+
+														<!-- Pop Up Area -->
+
+				
+														
+	<!-- popUpAddFee Area -->														
+	<div class="modal fade" id="popUpAddFee">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Add Fee</h3>
+				</div>
+				
+				<div class="modal-body" style="overflow-y: scroll;">
+					<div class="form-group">
+						<label for="">Class Name</label>
+						<select name="" id="" class="form-control">
+								<option>Select Class</option>
+								<option>One (I)</option>
+								<option>Two (II)</option>
+								<option>Three (III)</option>
+								<option>Four (IV)</option>
+								<option>Five (V)</option>
+								<option>Six (VI)</option>
+								<option>Seven (VII)</option>
+								<option>Eight (VIII)</option>
+						</select>	
+					</div>				
+					<div class="form-group">
+						<label for="totalAmount" class="control-label">Total Amount:</label>
+						<input type="text" class="form-control" id="totalAmount" name="totalAmount" placeholder="Total Amount" disabled="disabled">
+						<input type="hidden" class="form-control" id="totalAmountValue" name="totalAmountValue" value="135.00">
+					</div>							
+					<table class="table table-bordered" id="addSubExpensesTable">
+						<thead>
+						  <tr>
+							<th class="center">Name</th>
+							<th class="center">Amount</th>
+							<th class="center" style="width:10%;">Action</th>
+						  </tr>
+						</thead>
+						<tbody>                  
+							<tr id="row2" class="1">
+								<td class="form-group">
+								<input type="text" class="form-control" name="subExpensesName[2]" id="subExpensesName2" placeholder="Expenses Name">
+								</td>          
+								<td class="form-group">
+								<input type="text" class="form-control" name="subExpensesAmount[2]" id="subExpensesAmount2" onkeyup="calculateTotalAmount()" placeholder="Expenses Amount">
+								</td>          
+								<td class="center">
+								<button type="button" class="btn btn-default" onclick="removeExpensesRow(2)"><i class="glyphicon glyphicon-remove"></i></button>
+								</td>
+							</tr>          
+						</tbody>
+					</table>
+				</div><!-- /modal-body -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info" onclick="addExpensesRow()">Add Row</button>
+					<button type="submit" class="btn btn-primary" id="createExpensesBtn">Save changes</button>      
+				</div> 
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpAddFee end -->	
+												
+	
+
+	<!-- popUpEditFee -->	
+	
+	<div class="modal fade" id="popUpEditFee">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Edit Fee</h3>
+				</div>
+				
+				<div class="modal-body">	
+					<fieldset>
+						<div class="form-group">
+							<table class="table table-bordered">
+								<tr>
+									<th>Class Name</th>
+									<th>One</th>
+								</tr>		
+								<tr>
+									<td><h5>Monthly Fee</h5></td>
+									<td>
+										<input type="text" class="form-control" placeholder="100"/>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</fieldset><!-- fieldset end -->					
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpEditFee end -->	
+
+
+
+	
+	<!-- popUpRemove -->							
+	<div class="modal fade" id="popUpRemove">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Section info</h3>
+				</div>
+				
+				<div class="modal-body">
+					<h3>Do you really want to remove this Object?</h3>
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpRemove end -->
+
+	
+												
+	
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>		
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/fileinput.min.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script src="../js/jquery.fitvids.js"></script>		
+		<script src="../js/main.js"></script>	
+
+    </body>
+</html>
+<!--  -->

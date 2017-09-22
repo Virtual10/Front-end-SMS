@@ -1,0 +1,248 @@
+/* 
+
+   Read in the name of ALLAH 
+
+   =======================
+   Explore SuperStar World
+
+   Shihan Chowdhury
+   ======================= 
+   
+*/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio,canvas,iframe,img,svg,video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* =============
+   Custom Styles
+   ============= */
+
+.fix {
+	overflow:hidden;
+}
+.floatleft {
+	float:left;
+}
+.floatright {
+	float: right;
+}
+a, a:hover {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}   
+   
+   
+   
+   
+   
+   
+   
+/*
+	-_-_-_-_-_-_-_-_-_-_
+	User_login Start
+	-_-_-_-_-_-_-_-_-_-_
+*/
+#user_login {}   
+.user_login_logo {
+    text-align: center;
+    margin-top: 105px;
+	border: 1px solid #ddd;
+    border-bottom: none;	
+}   
+.user_login_logo a{
+    display: inline-block;
+    color: blue;
+    font-size: 100px;	
+}   
+.login_form label{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0px;	
+}  
+.login_form legend{
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: 900;
+    font-size: 29px;
+    color: darkslategrey;	
+}  
+.login_form {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-top: none;
+}  
+.login_form input{
+    font-size: 16px;
+    font-weight: 400;
+}  
+.login_form button{
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px !important;
+    height: auto;
+	background: rgba(0, 54, 255, 0.73);
+	color: #fff;
+}
+.login_form a{
+	color: #fff;	
+}  
+   
+/*
+	____________________
+	End
+	--------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    display: none !important;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+		box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,h2,h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,h3 {
+        page-break-after: avoid;
+    }
+}
+.slicknav_menu {
+	display: none;
+}

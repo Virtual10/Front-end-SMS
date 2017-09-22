@@ -1,0 +1,589 @@
+<!-- Read in the name of ALLAH -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SMS - Manage User</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fileinput.min.css">		
+        <link rel="stylesheet" href="../css/slicknav.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.green.min.css">
+        <link rel="stylesheet" href="../Model_CSS/dashboard.css">
+        <link rel="stylesheet" href="../Model_CSS/admission.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>	
+		<script src="../js/custom.js"></script>	
+    </head>
+	
+    <body onload="startTime()">
+	
+	<div id="head_section">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navVar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">
+						<div class="banner">
+							<a href="dashboard.html"><i class="fa fa-gg"></i></a>
+							<a href="dashboard.html"><h6>ABC School</h6></a>
+						</div>	
+					</div>
+					<!-- <a class="navbar-brand" href="#">Explore SuperStar World</a> -->
+				</div><!-- .navbar-header end -->
+
+				<div class="collapse navbar-collapse" id="navVar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"> Hi, Admin </i><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting</a></li>
+								<li role="separator" class="divider"></li>							
+								<li><a href="#">Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- .navbar-collapse end -->
+		
+			</div><!-- .container-fluid end -->
+		</nav>	<!-- navbar end -->
+		
+		<div class="header_bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 header_bottom_top">
+						<div class="date_block">
+							<h4>
+								<script type="text/javascript">
+									document.write("Today is "+daY()+","+today+" "+montH());
+								</script>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-9 header_bottom_down">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="activity_block">
+									<h4><a href="manage_user.html">Manage User</a>/ Manage Employee</h4>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="toggle_block floatleft">
+									<a href="#" id="menu_toggle"><i class="fa fa-indent"></i></a>
+								</div>
+								<div class="time_block floatright">
+									<h4 id="text"></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- row end -->
+			</div><!-- container-fluid end -->
+		</div><!-- header_bottom end -->
+		
+	</div><!-- head_section end -->
+	
+	<div id="side_bar_area">
+		
+		<!--Side bar content-->
+		<div class="sidebar_content">
+			<ul class="sidebar_nav center">
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="#">Manage Student</a></li>
+				<li><a href="#">Manage Class</a></li>
+				<li><a href="#">Student Fee</a></li>
+				<li><a href="#">Student Attendance</a></li>
+				<li><a href="#">Manage Marks</a></li>
+				<li><a href="#">Live News</a></li>
+				<li><a href="#">Hollidays</a></li>
+			</ul> <!-- sidebar_nav end -->
+		</div><!-- sidebar_content end -->
+			
+		<!--page content-->
+		<div id="page_content">
+
+			<div class="container-fluid">
+				<div class="row">	
+					<div class="col-md-12">
+						<fieldset>
+							<legend>Manage Employee</legend>  
+								<div class="form-group floatleft">
+									<input type="text" autocomplete="onautocomplete"/>
+									<button type="button" class="">SEARCH</button>
+								</div>
+								<div class="pull pull-right">
+									<a href="regi_employee.html"><button type="button" class="btn btn-default"> 
+										<i class="glyphicon glyphicon-plus-sign"></i> Add Employee
+									</button></a>
+								</div><br/><br/><br/>    	
+							
+								<table id="manageEmployeeTable" class="table table-bordered tab_row">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th><i class="fa fa-user"></i></th>
+											<th>Name</th>
+											<th>Contact</th>    				
+											<th>Email</th>
+											<th>NID no:</th>
+											<th>Status</th>
+											<th>Action</th>
+										</tr><!-- tr end -->
+										<tr>
+											<td>E170001</td>
+											<td>
+												<div class="table_pik">
+													<img src="../img/std1.jpg" alt="table_img" />
+												</div>
+											</td>
+											<td>Md. Abdul Ahad</td>
+											<td>01712225645</td>
+											<td>ahad01@gmail.com</td>
+											<td>1965141263784125</td>
+											<td>Active</td>
+											<td>
+												<div class="btn-group">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+													Action <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a data-toggle="modal"  href="#popUpView"><i class="glyphicon glyphicon-edit"></i> View</a></li>
+														<li><a data-toggle="modal" href="#popUpEdit"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>		    
+														<li><a  data-toggle="modal" href="#popUpRemove"><i class="glyphicon glyphicon-edit"></i> Remove</a></li>		    
+													</ul>
+												</div>
+											</td>
+										</tr><!-- tr end -->
+										<tr>
+											<td>E170002</td>
+											<td>
+												<div class="table_pik">
+													<img src="../img/teacher1.jpg" alt="table_img" />
+												</div>
+											</td>
+											<td>Md. Sufian Ahmed</td>
+											<td>01844225645</td>
+											<td>sufian.ahmed05@gmail.com</td>
+											<td>1975141264484125</td>
+											<td>Retired</td>
+											<td>
+												<div class="btn-group">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+													Action <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a data-toggle="modal"  href="#popUpView"><i class="glyphicon glyphicon-edit"></i> View</a></li>
+														<li><a data-toggle="modal" href="#popUpEdit"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>		    
+														<li><a  data-toggle="modal" href="#popUpRemove"><i class="glyphicon glyphicon-edit"></i> Remove</a></li>		    
+													</ul>
+												</div>
+											</td>
+										</tr><!-- tr end -->
+										<tr>
+											<td>T170001</td>
+											<td>
+												<div class="table_pik">
+													<img src="../img/employee1.jpg" alt="table_img" />
+												</div>
+											</td>
+											<td>Md. Abdul Ahad</td>
+											<td>01712225645</td>
+											<td>ahad01@gmail.com</td>
+											<td>1965141263784125</td>
+											<td>Active</td>
+											<td>
+												<div class="btn-group">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+													Action <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a data-toggle="modal"  href="#popUpView"><i class="glyphicon glyphicon-edit"></i> View</a></li>
+														<li><a data-toggle="modal" href="#popUpEdit"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>		    
+														<li><a  data-toggle="modal" href="#popUpRemove"><i class="glyphicon glyphicon-edit"></i> Remove</a></li>		    
+													</ul>
+												</div>
+											</td>
+										</tr><!-- tr end -->
+										<tr>
+											<td>E170002</td>
+											<td>
+												<div class="table_pik">
+													<img src="../img/std1.jpg" alt="table_img" />
+												</div>
+											</td>
+											<td>Md. Sufian Ahmed</td>
+											<td>01844225645</td>
+											<td>sufian.ahmed05@gmail.com</td>
+											<td>1975141264484125</td>
+											<td>Retired</td>
+											<td>
+												<div class="btn-group">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" 	aria-haspopup="true" aria-expanded="false">
+													Action <span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a data-toggle="modal"  href="#popUpView"><i class="glyphicon glyphicon-edit"></i> View</a></li>
+														<li><a data-toggle="modal" href="#popUpEdit"><i class="glyphicon glyphicon-edit"></i> Edit</a></li>		    
+														<li><a  data-toggle="modal" href="#popUpRemove"><i class="glyphicon glyphicon-edit"></i> Remove</a></li>		    
+													</ul>
+												</div>
+											</td>
+										</tr><!-- tr end -->										
+									</thead><!-- thead -->
+								</table><!-- table end -->	
+						</fieldset><!-- fieldset end -->	
+					</div><!-- col-md-12 end -->					
+				</div><!-- row end -->
+			</div><!-- container-fluid end -->
+		</div><!-- page_content end -->			
+	</div><!-- side_bar_area end -->
+			
+
+			
+														<!-- Pop Up Area -->
+
+														
+														
+														
+	<!-- popUpView -->							
+	<div class="modal fade" id="popUpView">
+		<div class="modal-dialog" style="width: 900px; margin: 0 auto; height: auto;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="print_head">
+						<i class="fa fa-gg floatleft"></i>
+						<h6 class="floatleft">ABC School</h6>
+					</div>
+				</div>
+				
+				<div class="modal-body">
+					<div class="body1">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="print_image">
+									<img src="../img/employee1.jpg" alt="Employee Image" />
+								</div>
+								<div class="print_head_name center">
+									<p>Shahriar khan</p>
+								</div>
+							</div><!-- col-md-3 end -->
+							<div class="col-md-9">
+								<table class="table table-bordered">
+									<thead>
+											<tr>   				
+												<th>User ID</th>
+												<th>E170001</th>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Name</td>
+												<td>Shahriar khan</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Father's Name</td>
+												<td>Md. Abdur Rahman</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Mother's Name</td>
+												<td>Mst. Salma Aktar</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Date of Birth</td>
+												<td>2000-03-20 [year-month-day]</td>
+											</tr><!-- tr end -->				
+											<tr>
+												<td>Contact Number</td>
+												<td>01715896982</td>
+											</tr><!-- tr end -->										
+										</thead><!-- thead -->
+								</table><!-- tr end -->	
+							</div><!-- col-md-9 end -->
+						</div><!-- row end -->
+					</div><!-- body1 end -->
+					
+					<div class="body2">
+						<div class="row">
+							<div class="col-md-6">
+								<table class="table table-bordered">
+									<thead>
+											<tr>
+												<th>NID no:</th>
+												<th>1965141263784125</th>
+											</tr><!-- tr end -->
+											<tr>
+												<th>Gender</th>
+												<th>Male</th>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Relegion</td>
+												<td>Islam</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Address</td>
+												<td>Kamalpurbazar</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>District</td>
+												<td>Moulvibazar</td>
+											</tr><!-- tr end -->				
+											<tr>
+												<td>Division</td>
+												<td>Sylhet</td>
+											</tr><!-- tr end -->										
+										</thead><!-- thead -->
+								</table><!-- table end -->									
+							</div><!-- col-md-6 end -->
+							<div class="col-md-6">
+								<table class="table table-bordered">
+									<thead>
+											<tr>   				
+												<th>Status</th>
+												<th>Active</th>
+											</tr><!-- tr end -->
+											<tr>   				
+												<td>Register Date</td>
+												<td>2015-01-05</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Job Type</td>
+												<td>Clark</td>
+											</tr><!-- tr end -->
+											<tr>
+												<td>Section</td>
+												<td>A</td>
+											<tr>
+												<td>Country</td>
+												<td>Bangladesh</td>
+											</tr><!-- tr end -->										
+										</thead><!-- thead -->
+								</table><!-- tr end -->	
+							</div><!-- col-md-9 end -->
+						</div><!-- row end -->
+					</div><!-- body2 end -->
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-success" onclick="window.print()">EDIT</button>
+					<button class="btn btn-primary" onclick="window.print()">PRINT</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpView end -->	
+															
+															
+														
+														
+														
+	<!-- popUpEdit -->							
+	<div class="modal fade" id="popUpEdit">
+		<div class="modal-dialog" style="width: 900px; margin: 0 auto; height: auto;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Employee Info</h3>
+				</div>
+				
+				<div class="modal-body">
+
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#personal_details" data-toggle="tab">Personal Details</a></li>
+						<li><a href="#regi_details" data-toggle="tab">Registration Details</a></li>
+					</ul>
+						
+					<!-- Tab panes -->
+					<div class="tab-content" style="padding-top: 15px;">
+						<div role="tabpanel" class="tab-pane fade in active" id="personal_details">
+							<div class="row">	
+								<form action="#">
+									<div class="col-md-7">
+										<fieldset>
+											<div class="form-group">
+												<label for="eID">Employee ID </label>
+													<input type="text" class="form-control" id="eID" name="eID" placeholder="E17xxxx" autocomplete="onautocomplete" required>
+											</div>		
+											<div class="form-group">
+												<label for="fname">First Name</label>
+													<input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" autocomplete="off" required>
+											</div>
+											<div class="form-group">
+												<label for="lname">Last Name</label>
+													<input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" autocomplete="off" required>
+											</div>
+											<div class="form-group">
+												<label for="dob">Date of Birth</label>
+												<input type="text" class="form-control" id="dob" name="dob" placeholder="Date of Birth"
+												autocomplete="off">
+											</div>
+											<div class="form-group">
+												<label for="className">Gender</label>
+													<select class="form-control" name="gender" id="gender">
+														<option value="">Male</option>
+														<option value="">Female</option>
+														<option value="">Others</option>
+													</select>
+											</div>
+											<div class="form-group">
+												<label for="className">Relegion</label>
+													<select class="form-control" name="relegion" id="relegion">
+														<option value="">Islalm</option>
+														<option value="">Hindu</option>
+														<option value="">Cristian</option>
+													</select>
+											</div>
+										</fieldset><!-- fieldset end -->
+									</div><!-- col-md-7 end -->
+								
+									<div class="col-md-5">
+										<fieldset>
+											<div class="form-group">
+												<label for="contact">Contact Number</label>
+													<input type="number" class="form-control" id="contact" name="contact" placeholder="Mobile Number"
+													autocomplete="off">
+											</div>
+											<div class="form-group">
+												<label for="fname">Father's Name</label>
+													<input type="text" class="form-control" id="fathername" name="fathername" placeholder="Father's Name" autocomplete="onabort" >
+											</div>
+											<div class="form-group">
+												<label for="fname">Mother's Name</label>
+													<input type="text" class="form-control" id="mothername" name="mothername" placeholder="Mother's Name" autocomplete="onabort" >
+											</div>
+											<div class="form-group">
+												<label for="address">Address</label>
+													<input type="text" class="form-control" id="address" name="address" placeholder="Vill:- Post:- Road no:-" autocomplete="onautocomplete" >
+											</div>
+											<div class="form-group">
+												<label for="fname">District</label>
+													<input type="text" class="form-control" id="district" name="district" placeholder="District Name" autocomplete="onautocomplete" >
+											</div>						
+											<div class="form-group">
+												<label for="className">Divission</label>
+													<select class="form-control" name="divission" id="divission">
+														<option value="">Dhaka</option>
+														<option value="">Chittagong</option>
+														<option value="">Rajshahi</option>
+														<option value="">Borishal</option>
+														<option value="">Khulna</option>
+														<option value="">Rangpur</option>
+														<option value="">Sylhet</option>
+														<option value="">Joshur</option>
+													</select>
+											</div>
+											<div class="form-group">
+												<label for="fname">Country</label>
+													<input type="text" class="form-control" id="country" name="country" placeholder="Country Name" autocomplete="onautocomplete" >
+											</div>
+										</fieldset><!-- fieldset end -->			
+									</div><!-- col-md-5 end -->
+									
+								</form><!-- form end -->
+							</div><!-- row end -->
+						</div><!-- personal_details end -->
+						
+						<div role="tabpanel" class="tab-pane fade" id="regi_details">
+							<div class="row">	
+								<form action="#">
+									<div class="col-md-7">
+										<fieldset>
+											<legend>PHOTO</legend>
+											<div class="upload_photo">
+												<form enctype="multipart/form-data">
+													<input id="file-fr" name="file-fr[]" type="file" multiple>
+												</form>
+											</div>
+										</fieldset><!-- fieldset end -->
+									</div><!-- col-md-7 end -->
+								
+									<div class="col-md-5">
+										<fieldset>
+											<div class="form-group">
+												<label for="registerDate">Register Date</label>
+												<input type="text" class="form-control" id="registerDate" name="registerDate" placeholder="Register Date" autocomplete="off">
+											</div>
+											<div class="form-group">
+												<label for="job_type">Job Type</label>
+												<select class="form-control" name="job_type" id="job_type">
+													<option value="">Select Type</option>
+													<option value="">Clark</option>
+													<option value="">Pion</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="status">Status</label>
+												<select class="form-control" name="status" id="status">
+													<option value="">Running</option>
+													<option value="">Expalled</option>
+													<option value="">Passed</option>
+												</select>
+											</div>
+										</fieldset><!-- fieldset end -->       
+									</div><!-- col-md-5 end -->
+								</form><!-- form end -->
+							</div><!-- row end -->
+						</div><!-- regi_details end -->
+					</div><!-- Tab content end -->
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpEdit end -->	
+
+
+
+	<!-- popUpRemove -->							
+	<div class="modal fade" id="popUpRemove">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3>Student Info</h3>
+				</div>
+				
+				<div class="modal-body">
+					<h3>Do you really want to remove this employee?</h3>
+				</div><!-- modal body end -->
+				
+				<div class="modal-footer center">
+					<button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+				</div><!-- modal-footer end -->
+				
+			</div><!-- modal-content end -->
+		</div><!-- modal-dialog end -->
+	</div><!-- #popUpEdit end -->		
+			
+			
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>		
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/fileinput.min.js"></script>		
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script src="../js/jquery.fitvids.js"></script>		
+		<script src="../js/main.js"></script>	
+
+    </body>
+</html>
+<!--  -->

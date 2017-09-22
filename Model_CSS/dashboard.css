@@ -1,0 +1,718 @@
+/* 
+
+   Read in the name of ALLAH 
+
+   =======================
+   Explore SuperStar World
+
+   Shihan Chowdhury
+   ======================= 
+   
+*/
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio,canvas,iframe,img,svg,video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* =============
+   Custom Styles
+   ============= */
+
+.fix {
+	overflow:hidden;
+}
+.floatleft {
+	float:left;
+}
+.floatright {
+	float: right;
+}
+a, a:hover {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.center {
+	text-align: center;
+}   
+.left {
+	text-align: left;
+}   
+.right {
+	text-align: right;
+}   
+   
+   
+   
+   
+   
+   
+/*
+	-_-_-_-_-_-_-_-_-_-_
+	head_section Start
+	-_-_-_-_-_-_-_-_-_-_
+*/
+
+#head_section {}
+#head_section .navbar{
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+#head_section .navbar .navbar-brand{}
+#head_section .navbar .banner{}
+#head_section .navbar .banner a{
+	
+}
+#head_section .navbar .banner a i{
+    font-size: 48px;
+    margin: -14px 0px 5px 15px;
+    padding: 0px;	
+}
+#head_section .navbar .banner h6{
+    float: right;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-left: 5px;
+    font-variant: small-caps;
+    font-weight: 800;
+    color: darkslateblue;	
+}
+.header_bottom_top {background: #0d47a1; color: #fff;}
+.header_bottom_down {background: #311b92; color: #fff;}
+.date_block {}
+.date_block h4{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 13px;
+    margin-bottom: 26px;
+	margin-left: 16px;	
+}
+.activity_block h4{
+    padding-top: 17px;
+	font-weight: 600;
+}
+.toggle_block {}
+.toggle_block a{
+    font-size: 50px;
+    color: #ddd;
+    padding: 0px;
+    font-weight: 900;	
+}
+.toggle_block a:hover{color: #fff;}
+.time_block h4{
+	font-size: 20px;
+    font-weight: 600;
+    padding-top: 13px;	
+}
+
+/*
+	-_-_-_-_-_-_-_-_-_-_
+	Side bar Menu Start
+	-_-_-_-_-_-_-_-_-_-_
+*/
+   
+.sidebar_content{
+	width: 0px;
+	height: auto;
+	overflow-y: hidden;
+	background: #2C3E50;
+	z-index: 1;
+	/* opacity: 0.9; */
+	position: absolute;
+	top: 138px;
+	left: 0px;		
+}
+.sidebar_nav li{
+	line-height: 52px;
+	border-bottom: 1px inset #ddd;
+}
+.sidebar_nav li a{
+	display: block;
+	color: #ddd;
+}
+.sidebar_nav li a:hover{
+	background: rgba(51, 85, 183, 0.56);
+	color: #fff;
+}
+
+#page_content{
+	width: 100%;
+	position: absolute;
+	padding: 15px;
+}
+
+#side_bar_area.menuDisplayed .sidebar_content{
+	width: 190px;
+}
+
+#side_bar_area.menuDisplayed #page_content{
+	padding-left: 190px;
+	padding-right: 5px;
+}
+#menu_toggle{
+	display: block;
+}  
+.single_button {
+	margin-bottom: 25px;
+} 
+.single_button_content {
+	background: #d9edf7;
+    width: 85%;
+    margin: auto;	
+	border: 1px solid #ddd;	
+}   
+.single_button_content a{
+    font-size: 80px;
+    color: darkslateblue;
+	display: block;
+}   
+.single_button_content h3{
+    text-transform: uppercase;
+    margin-top: -4px;
+    padding-bottom: 3px;
+    color: #337ab7;
+}   
+   
+/*
+	____________________
+	End
+	--------------------
+*/
+
+																/*
+																	____________________
+																	 .tab_row Start
+																	---------------------
+																*/
+.tab_row th, .tab_row td{text-align: center;}
+.tab_row i{font-size: 19px;}
+.tab_row thead>tr>td{height: auto;padding-top: 26px;}
+.tab_row td:nth-child(2) i{font-size: 60px;}
+.tab_row td:nth-child(2){padding-top: 8px;}
+.tab_row td:nth-child(8){padding-top: 20px;}
+.tab_row  .dropdown-menu{min-width: 40px !important;margin: 0px;padding: 0px;}
+.tab_row .dropdown-menu li{width: 88px;}
+.tab_row  .dropdown-menu>li>a {display: block;padding: 4px 5px;}
+
+																/*
+																	____________________
+																	 tab_row end
+																	--------------------
+																*/
+
+   
+/*
+	____________________
+	Student Registration Start
+	-----------------------------------------------------------------------------------------
+*/
+.save_button {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ddd;
+	margin: 15px 0px;
+}
+.save_button button, .save_button input[type="reset"]{
+    background: #337ab7;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;	
+}
+.save_button input[type="reset"]{
+	background: red;
+}
+.save_button button:hover, .save_button input[type="reset"]:hover {
+	color: #fff;
+}
+   
+/*
+	____________________
+	Manage Teacher Registration Start
+	-----------------------------------------------------------------------------------------
+*/
+.table_pik {
+	height: 64px;
+    width: 64px;
+    margin: 0 auto;	
+}
+.table_pik img{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+.month_td {padding-top: 15px !important;}
+/*
+	____________________
+	Manage Student Registration Start
+	-----------------------------------------------------------------------------------------
+*/
+.std_mng {}
+.std_mng .std_tab{
+    padding: 15px;	
+}
+.std_mng .std_border{
+	border: 1px solid #ddd;
+}
+.panel_head{
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #ddd;	
+    border-color: #ddd;
+    color: #333;
+    padding: 5px 0px;	
+}
+.std_mng .std_ul{text-align: center;font-size: 20px;}
+.std_mng .std_ul li{border-bottom: 1px solid #ddd;}
+.std_mng .std_ul li a{display: block;padding: 10px 0px;color: #333;}
+.std_mng .std_ul li a:hover{background: #337ab7;color: #fff;}
+.std_mng .std_ul li .active{background: #337ab7;color: #fff;}
+
+
+
+															/*
+																____________________
+																Manage User Start
+																---------------------
+															*/
+
+/* manageStudentFee */
+#manageStudentTable {}
+.tab_row_m3 th:nth-child(1){ width: 10%;}
+.tab_row_m3 th:nth-child(2){ width: 15%;}
+.tab_row_m3 th:nth-child(3){ width: 25%;}
+.tab_row_m3 th:nth-child(4){ width: 25%;}
+.tab_row_m3 th:nth-child(5){ width: 10%;}
+.tab_row_m3 th:nth-child(6){ width: 5%;}
+.tab_row_m3 th:nth-child(7){ width: 10%;}
+.tab_row_m3 thead>tr>td:nth-child(7){padding-top: 21px;} 
+/* manageTeacherTable */
+#manageTeacherTable th:nth-child(1){ width: 7%;}
+#manageTeacherTable th:nth-child(2){ width: 10%;}
+#manageTeacherTable th:nth-child(3){ width: 20%;}
+#manageTeacherTable th:nth-child(4){ width: 10%;}
+#manageTeacherTable th:nth-child(5){ width: 20%;}
+#manageTeacherTable th:nth-child(6){ width: 16%;}
+#manageTeacherTable th:nth-child(7){ width: 7%;}
+#manageTeacherTable th:nth-child(8){ width: 10%;}
+/* manageEmployeeTable */
+#manageEmployeeTable {}
+#manageEmployeeTable th:nth-child(1){ width: 7%;}
+#manageEmployeeTable th:nth-child(2){ width: 10%;}
+#manageEmployeeTable th:nth-child(3){ width: 20%;}
+#manageEmployeeTable th:nth-child(4){ width: 10%;}
+#manageEmployeeTable th:nth-child(5){ width: 20%;}
+#manageEmployeeTable th:nth-child(6){ width: 16%;}
+#manageEmployeeTable th:nth-child(7){ width: 7%;}
+#manageEmployeeTable th:nth-child(8){ width: 10%;}
+
+															/*
+																____________________
+																class_and_subject Start
+																--------------------
+															*/
+.feeStructureSetup td:nth-child(1){padding-top: 16px;}
+.tab_row_m1 td:nth-child(2){padding-top: 16px;}
+.tab_row_m1 td:nth-child(3){padding-top: 16px;}
+.tab_row_m1 td:nth-child(4){padding-top: 10px;}
+/* manageClassTable */
+#manageClassTable {}
+/* manageSectionTable */
+#manageSectionTable {}
+#manageSectionTable th:nth-child(1){ width: 15%;}
+#manageSectionTable th:nth-child(2){ width: 65%;}
+#manageSectionTable th:nth-child(3){ width: 20%;}
+#manageSectionTable td:nth-child(3){padding-top: 10px;}
+/* manageSectionTable */
+#manageSubjectTable {}
+
+															/*
+																____________________
+																acounting Start
+																--------------------
+															*/
+/* fee structure setup*/
+#feeStructureSetup td:nth-child(1),
+#feeStructureSetup td:nth-child(2){padding-top: 15px;}
+#feeStructureSetup td:nth-child(3){padding-top: 10px;}
+/* student fee*/
+/* payroll*/
+/* manageStudentFee */
+#manageStudentFee {} 
+#manageStudentFee th:nth-child(1){ width: 9%;}
+#manageStudentFee th:nth-child(2){ width: 10%;}
+#manageStudentFee th:nth-child(3){ width: 25%;}
+#manageStudentFee th:nth-child(4){ width: 12%;}
+#manageStudentFee th:nth-child(5){ width: 12%;}
+#manageStudentFee th:nth-child(6){ width: 6%;}
+#manageStudentFee th:nth-child(7){ width: 13%;}
+#manageStudentFee th:nth-child(8){ width: 13%;}
+
+/* manageTeacherPayrollTable */
+#manageTeacherPayrollTable {}
+/* manageEmployeePayrollTable */
+#manageEmployeePayrollTable {}
+
+															/*
+																____________________
+																print_payment Start
+																--------------------
+															*/
+															
+#popUpPrintTeacherPayroll .panel_head, #popUpPrintStudentFee .panel_head{
+    font-size: 16px;
+    padding: 3px 0px;	
+}
+#popUpPrintTeacherPayroll .panel_head button, #popUpPrintStudentFee .panel_head button {
+    color: #fff;
+    padding: 0px 14px;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+	background: #5cb85c;
+}
+#popUpEdit {}
+.print_head {
+    width: 370px;
+    margin: 0 auto;	
+}
+.print_head i{
+    font-size: 100px;
+    color: blue;	
+}
+.print_head h6{
+    font-size: 40px;
+    font-weight: 800;
+    color: rgba(37, 0, 255, 0.46);
+    padding-top: 17px;	
+}
+
+/* Student Manage_user_std */
+.body1 th:first-child {
+	width: 30%;
+}
+.body2 th:first-child {
+	width: 30%;
+}
+.current_print_payment .print_payment tr:last-child td{
+	font-size: 11px;
+	color: red;
+}
+
+.print_side_col .print_image {width: 200px;height: 200px;}
+.print_image img{max-width: 100%;max-height: 100%;}
+.print_head_name {background: #ddd;}
+.print_head_name p{padding: 6.5px;color: #333;}
+.print_side_col .print_head_name {width: 95.5%;}
+.print_side_col .print_head_name p {padding: 4.5px;color: #333;}
+.print_payment th, .print_payment td {text-align: center;}
+.print_payment th:nth-child(1){ width: 8.3%;}
+.print_payment th:nth-child(2){ width: 8.3%;}
+.print_payment th:nth-child(3){ width: 8.3%;}
+.print_payment th:nth-child(4){ width: 8.3%;}
+.print_payment th:nth-child(5){ width: 8.3%;}
+.print_payment th:nth-child(6){ width: 8.3%;}
+.print_payment th:nth-child(8){ width: 8.3%;}
+.print_payment th:nth-child(9){ width: 8.3%;}
+.print_payment th:nth-child(10){ width: 8.3%;}
+.print_payment th:nth-child(11){ width: 8.3%;}
+.print_payment th:nth-child(12){ width: 8.3%;}
+
+
+															/*
+																____________________
+																popUpView Start
+																-----------------------------------------------------------------------------------------
+															*/
+
+
+
+/*
+	____________________
+	popUpAddSection  Start
+	-----------------------------------------------------------------------------------------
+*/
+
+
+
+
+
+															/*
+																____________________
+																attendance Start
+																--------------------
+															*/
+.tab_row_m2 th, .tab_row_m2 td{ text-align: center;}
+.tab_row_m2 th:nth-child(1){ width: 10%;}
+.tab_row_m2 th:nth-child(2){ width: 15%;}
+.tab_row_m2 th:nth-child(3){ width: 25%;}
+.tab_row_m2 th:nth-child(4){ width: 50%;}
+/* takeStudentAttendance */
+.tab_row_m2 {}
+/* takeStudentAttendance */
+/* takeStudentAttendance */
+.attendance_head {border: 1px solid #ddd;padding: 15px;}
+.attendance_head .attn_btn {margin-top: 17px;margin-bottom: -20px;}
+.below_attendance,.toggle_submit_btn {margin-top: 40px; display: none;}
+#takeStudentAttendance {}
+
+.presentl {
+	z-index: 2;
+	padding: 25px;
+}
+.absentl {
+	z-index: 1;
+	padding: 25px;
+}  
+.attendance_switch{
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+.attendance_switch .present_yes{
+    padding: 4px;
+    width: 110px;
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    top: -4px;
+}
+.attendance_switch .present_no{
+    padding: 4px;
+    width: 110px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: -4px;
+}
+.true_attend {background: green;}
+.present_no {background: red;}
+
+															/*
+																____________________
+																marksheet Start
+																--------------------
+															*/
+/* marksheet_manage*/
+#manageMarksheet td:nth-child(1),
+#manageMarksheet td:nth-child(2){padding-top: 15px;}
+#manageMarksheet td:nth-child(3){padding-top: 10px;}
+/* manage_marks */
+.panel_body {clear: both;}
+.panel_bottom_left {
+	padding: 5px;
+    margin-bottom: 11px;	
+}
+.panel_bottom_right {padding-top: 30px;}
+/* manageMarksTable */
+.tab_row_m4 th, .tab_row_m4 td,.tab_row_m5 th:nth-child(2), .std_id_div th{text-align: center;}
+.std_id_div th:nth-child(1){ width: 50%;}
+.std_id_div th:nth-child(2){ width: 50%;}
+.tab_row_m4 th:nth-child(1){ width: 44%;}
+.tab_row_m4 th:nth-child(2){ width: 16%;}
+.tab_row_m4 th:nth-child(3){ width: 17%;}
+.tab_row_m4 th:nth-child(4){ width: 18%;}
+.tab_row_m4 td:nth-child(1),.tab_row_m4 td:nth-child(2),.tab_row_m4 td:nth-child(4){padding-top: 14px;}
+
+															/*
+																____________________
+																Notice Start
+																-----------------------------------------------------------------------------------------
+															*/
+.tab_row_m6 th, .tab_row_m6 td{text-align: center;}
+.tab_row_m6 {}
+.tab_row_m6 th:nth-child(1){ width: 14%;}
+.tab_row_m6 th:nth-child(2){ width: 14%;}
+.tab_row_m6 th:nth-child(3){ width: 62%;}
+.tab_row_m6 th:nth-child(4){ width: 10%;}
+.tab_row_m6 .dropdown-menu, .tab_row_m8 .dropdown-menu{min-width: 40px !important;margin: 0px;padding: 0px;}
+.tab_row_m6 .dropdown-menu li, .tab_row_m8 .dropdown-menu li{width: 88px;}
+.tab_row_m6 .dropdown-menu>li>a, .tab_row_m8 .dropdown-menu>li>a {display: block;padding: 4px 5px;}
+.tab_row_m6 td:nth-child(1),
+.tab_row_m6 td:nth-child(2),
+.tab_row_m6 td:nth-child(3)
+{ padding-top: 14px;}
+
+.tab_row_m7 td:nth-child(1),
+.tab_row_m7 td:nth-child(2),
+.tab_row_m7 td:nth-child(3)
+{ padding-top: 8px;}
+.event_edit_table th, .event_edit_table td{text-align: center;}
+.event_edit_table th{width: 20%;padding-top: 14px !important;}
+/* live_news */
+.tab_row_m8 th, .tab_row_m8 td{text-align: center;}
+.tab_row_m8 th:nth-child(1){ width: 10%;}
+.tab_row_m8 th:nth-child(2){ width: 44%;}
+.tab_row_m8 th:nth-child(3){ width: 23%;}
+.tab_row_m8 th:nth-child(4){ width: 13%;}
+.tab_row_m8 th:nth-child(5){ width: 10%;}
+.tab_row_m8 td:nth-child(1),
+.tab_row_m8 td:nth-child(2),
+.tab_row_m8 td:nth-child(3),
+.tab_row_m8 td:nth-child(4)
+{ padding-top: 14px;}
+
+/* notice_live_news_add */
+.news_div {
+	width: 900px; 
+	margin: 0 auto;
+}
+.news_div .single_news_div {
+	margin: 15px 0px;
+}
+.news_div .single_news_div label{
+	font-size: 18px;
+}
+/* notice_exam_schedule */
+#noticeExamSchedule {}
+.tab_row_m9 th, .tab_row_m9 td {text-align: center;}
+.tab_row_m9 td{padding-top: 16px !important;}
+.tab_row_m9 th:nth-child(1){ width: 50%;}
+.tab_row_m9 th:nth-child(2){ width: 30%;}
+.tab_row_m9 th:nth-child(3){ width: 20%;}
+.tab_row_m9 td:nth-child(3){padding-top: 10px !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    display: none !important;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+		box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,h2,h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,h3 {
+        page-break-after: avoid;
+    }
+}

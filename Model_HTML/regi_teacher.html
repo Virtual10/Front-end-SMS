@@ -1,0 +1,290 @@
+<!-- Read in the name of ALLAH -->
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SMS - Registration</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/fileinput.min.css">		
+        <link rel="stylesheet" href="../css/slicknav.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../css/owl.theme.green.min.css">
+        <link rel="stylesheet" href="../Model_CSS/dashboard.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>	
+		<script src="../js/custom.js"></script>	
+    </head>
+	
+    <body onload="startTime()">
+	
+	<div id="head_section">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navVar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-brand">
+						<div class="banner">
+							<a href="dashboard.html"><i class="fa fa-gg"></i></a>
+							<a href="dashboard.html"><h6>ABC School</h6></a>
+						</div>	
+					</div>
+					<!-- <a class="navbar-brand" href="#">Explore SuperStar World</a> -->
+				</div><!-- .navbar-header end -->
+
+				<div class="collapse navbar-collapse" id="navVar">	
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"> Hi, Admin </i><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Setting</a></li>
+								<li role="separator" class="divider"></li>							
+								<li><a href="#">Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- .navbar-collapse end -->
+		
+			</div><!-- .container-fluid end -->
+		</nav>	<!-- navbar end -->
+		
+		<div class="header_bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 header_bottom_top">
+						<div class="date_block">
+							<h4>
+								<script type="text/javascript">
+									document.write("Today is "+daY()+","+today+" "+montH());
+								</script>
+							</h4>
+						</div>
+					</div>
+					<div class="col-md-9 header_bottom_down">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="activity_block">
+									<h4><a href="admission.html">Admission</a>/ Teacher Registration</h4>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="toggle_block floatleft">
+									<a href="#" id="menu_toggle"><i class="fa fa-indent"></i></a>
+								</div>
+								<div class="time_block floatright">
+									<h4 id="text"></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- row end -->
+			</div><!-- container-fluid end -->
+		</div><!-- header_bottom end -->
+		
+	</div><!-- head_section end -->
+	
+	<div id="side_bar_area">
+		
+		<!--Side bar content-->
+		<div class="sidebar_content">
+			<ul class="sidebar_nav center">
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="#">Manage Student</a></li>
+				<li><a href="#">Manage Class</a></li>
+				<li><a href="#">Student Fee</a></li>
+				<li><a href="#">Student Attendance</a></li>
+				<li><a href="#">Manage Marks</a></li>
+				<li><a href="#">Live News</a></li>
+				<li><a href="#">Hollidays</a></li>
+			</ul> <!-- sidebar_nav end -->
+		</div><!-- sidebar_content end -->
+			
+		<!--page content-->
+		<div id="page_content">
+
+			<div class="container-fluid">
+				<div class="row">	
+					<form action="#">
+						<div class="col-md-7">
+							<fieldset>
+								<legend>Teacher Info</legend>
+								<div class="form-group">
+									<label for="tID">Teacher ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="" data-toggle="modal" data-target="#TpopUp"><code>Example&nbsp;<i class="fa fa-th-list"></i></code></a></label>
+										<input type="text" class="form-control" id="tID" name="tID" placeholder="T17xxxx" autocomplete="onautocomplete" required>
+								</div>	
+								<div class="form-group">
+									<label for="fname">First Name</label>
+										<input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" autocomplete="off" >
+								</div>
+								<div class="form-group">
+									<label for="lname">Last Name</label>
+										<input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" autocomplete="off" >
+								</div>
+								<div class="form-group">
+									<label for="dob">Date of Birth</label>
+									<input type="text" class="form-control" id="dob" name="dob" placeholder="Date of Birth"
+									autocomplete="off">
+								</div>
+								<div class="form-group">
+									<label for="className">Gender</label>
+										<select class="form-control" name="gender" id="gender">
+											<option value="">Male</option>
+											<option value="">Female</option>
+											<option value="">Others</option>
+										</select>
+								</div>
+								<div class="form-group">
+									<label for="className">Relegion</label>
+										<select class="form-control" name="relegion" id="relegion">
+											<option value="">Islalm</option>
+											<option value="">Hindu</option>
+											<option value="">Cristian</option>
+										</select>
+								</div>
+								<div class="form-group">
+									<label for="contact">Contact Number</label>
+										<input type="number" class="form-control" id="contact" name="contact" placeholder="Mobile Number"
+										autocomplete="off">
+								</div>		
+								<div class="form-group">
+									<label for="NID">NID Number</label>
+										<input type="number" class="form-control" id="nid" name="nid" placeholder="NID Number"
+										autocomplete="off">
+								</div>						
+								<div class="form-group">
+									<label for="email">Email Address</label>
+										<input type="email" class="form-control" id="email" name="email" placeholder="example@world.com"
+										autocomplete="off">
+								</div>
+								<div class="form-group">
+									<label for="fname">Father's Name</label>
+										<input type="text" class="form-control" id="fathername" name="fathername" placeholder="Father's Name" autocomplete="onabort" >
+								</div>
+								<div class="form-group">
+									<label for="fname">Mother's Name</label>
+										<input type="text" class="form-control" id="mothername" name="mothername" placeholder="Mother's Name" autocomplete="onabort" >
+								</div>
+							</fieldset><!-- fieldset end -->
+							
+							<fieldset>
+								<legend>Address Info</legend>
+								<div class="form-group">
+									<label for="address">Address</label>
+										<input type="text" class="form-control" id="address" name="address" placeholder="Vill:- Post:- Road no:-" autocomplete="onautocomplete" >
+								</div>
+								<div class="form-group">
+									<label for="fname">District</label>
+										<input type="text" class="form-control" id="district" name="district" placeholder="District Name" autocomplete="onautocomplete" >
+								</div>						
+								<div class="form-group">
+									<label for="className">Divission</label>
+										<select class="form-control" name="divission" id="divission">
+											<option value="">Dhaka</option>
+											<option value="">Chittagong</option>
+											<option value="">Rajshahi</option>
+											<option value="">Borishal</option>
+											<option value="">Khulna</option>
+											<option value="">Rangpur</option>
+											<option value="">Sylhet</option>
+											<option value="">Joshur</option>
+										</select>
+								</div>
+								<div class="form-group">
+									<label for="fname">Country</label>
+										<input type="text" class="form-control" id="country" name="country" placeholder="Country Name" autocomplete="onautocomplete" >
+								</div>
+							</fieldset><!-- fieldset end -->
+						</div><!-- col-md-7 end -->
+					
+						<div class="col-md-5">
+							<fieldset>
+								<legend>Registration Info</legend>
+								<div class="form-group">
+									<label for="registerDate">Register Date</label>
+									<input type="text" class="form-control" id="registerDate" name="registerDate" placeholder="Register Date" autocomplete="off">
+								</div>
+								<div class="form-group">
+									<label for="job_type">Job Type</label>
+									<select class="form-control" name="job_type" id="job_type">
+										<option value="">Select Type</option>
+										<option value="">Full Time</option>
+										<option value="">Part time</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="status">Status</label>
+									<select class="form-control" name="status" id="status">
+										<option value="">Running</option>
+										<option value="">Study Leave</option>
+										<option value="">Retired</option>
+										<option value="">Resigned</option>
+									</select>
+								</div>
+							</fieldset><!-- fieldset end -->       
+
+							<fieldset>
+								<legend>Photo</legend>
+								<div class="form-group">
+									<label for="photo">Photo</label>
+								        <input id="file-fr" name="file-fr[]" type="file" multiple>               
+								</div>
+							</fieldset><!-- fieldset end --> 
+						</div><!-- col-md-5 end -->
+						
+						<div class="col-md-12 center save_button">
+							<button type="button">Save Changes</button>
+							<input type="reset" value="Reset"/>
+						</div><!-- col-md-12 end -->
+						
+					</form><!-- form end -->
+				</div><!-- row end -->
+				
+			</div><!-- container-fluid end -->
+		</div><!-- page_content end -->	
+						
+		<div id="TpopUp" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3>Teacher user ID</h3>
+					</div><!-- modal-header end -->
+					
+					<div class="modal-body">
+						<h4>User ID Format Example:</h4>
+						<h4><code><strong>T</strong></code>+Year+4 digit</h4>
+						<h3>Example <code>T170001</code></h3>
+					</div><!-- modal-body end -->
+				</div><!-- modal-content -->
+			</div><!-- modal-dialog end -->
+		</div><!-- TpopUp end -->
+		
+	</div><!-- side_bar_area end -->
+			
+
+		<!-- JavaScript -->
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>		
+        <script src="../js/plugins.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+		<script src="../js/fileinput.min.js"></script>		
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/jquery.slicknav.min.js"></script>
+        <script src="../js/jquery.fitvids.js"></script>		
+		<script src="../js/main.js"></script>	
+
+    </body>
+</html>
+<!--  -->
